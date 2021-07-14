@@ -59,7 +59,6 @@ func GetUserStub() {
 }
 
 func main() {
-	hessian.RegisterPOJO(&pkg.User{})
 	config.Load()
 	time.Sleep(3 * time.Second)
 

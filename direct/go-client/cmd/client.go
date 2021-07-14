@@ -52,7 +52,6 @@ func init() {
 // in order to make sure direct-invoking is enabled, check if references -> UserProvider -> url is specified
 // in conf/client.yaml
 func main() {
-	hessian.RegisterPOJO(&pkg.User{})
 	config.Load()
 	time.Sleep(3 * time.Second)
 
